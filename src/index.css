@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap');
+
+body{
+    font-family: 'Alexandria', sans-serif;
+        background-color: #131722;
+    color: #fff;
+}
+
+.form-control{
+    background-color: #131722 !important;
+    color: #fff !important;
+}
+.secondColor{
+    color: #949cb0;
+}
+.logPointer{
+cursor: pointer;
+}
