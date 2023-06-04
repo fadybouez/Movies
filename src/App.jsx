@@ -50,7 +50,7 @@ useEffect(()=>{
       <div className="container">
         <MediaContextProvider>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={ <ProtectedRoute><Home/></ProtectedRoute>  } />
           <Route path="home" element={ <ProtectedRoute><Home/></ProtectedRoute>  } />
           <Route path="about" element={<ProtectedRoute><About /></ProtectedRoute>} />
           <Route path="movies" element={ <ProtectedRoute><Movies/></ProtectedRoute>} />
