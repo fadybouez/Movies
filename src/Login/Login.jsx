@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Joi from "joi";
 import { useNavigate } from "react-router-dom";
-
+import Styles from './login.css'
 export default function Login(props) {
   let navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
@@ -59,8 +59,9 @@ export default function Login(props) {
 
   }
 
-  return (
-    <div className="w-75 mx-auto">
+  return <>
+ 
+    <div className=" mx-auto   w-50 Styles  p-3 mt-5">
       <h2 className="my-3">Login Now</h2>
       {error ? <div className="bg-danger p-2 alert">{error} </div> : ""}
       {errorList.map((error, index) => {
@@ -85,6 +86,12 @@ export default function Login(props) {
           id="email"
         />
 
+
+
+
+
+
+
         <label htmlFor="password">password :</label>
         <input
           onChange={getUser}
@@ -103,5 +110,6 @@ export default function Login(props) {
         </button>
       </form>
     </div>
-  );
+    
+    </>
 }

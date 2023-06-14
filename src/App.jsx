@@ -9,8 +9,8 @@ import Register from "./Register/Register";
 import Movies from "./Movies/Movies";
 import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
-import MovieDetails from './MovieDetails/Moviedetails';
 import { MediaContextProvider } from "./MediaContext";
+import Details from "./Details/Details";
 
 
 function App() {
@@ -57,8 +57,8 @@ useEffect(()=>{
           <Route path="login" element={<Login userData={getUserData}/>} />
           <Route path="network" element={ <ProtectedRoute><Network/></ProtectedRoute>} />
 
-          <Route path="movieDetails" element={ <ProtectedRoute> <MovieDetails/></ProtectedRoute>}>
-            <Route path=":id/:mediaType" element={ <MovieDetails/>}/>
+          <Route path="Details" element={ <ProtectedRoute> <Details/></ProtectedRoute>}>
+            <Route path=":id/:mediaType" element={ <Details/>}/>
             
           </Route>
 

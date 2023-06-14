@@ -62,7 +62,7 @@ export default function Register() {
   }
 
   return (
-    <div className="w-75 mx-auto">
+    <div className="w-50 mx-auto">
       <h2 className="my-3">Register Now</h2>
       {error ? <div className="bg-danger p-2 alert">{error} </div> : ""}
       {errorList.map((error, index) => {
